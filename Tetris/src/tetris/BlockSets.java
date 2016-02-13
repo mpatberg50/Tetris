@@ -10,10 +10,14 @@ package tetris;
  * @author Patberg
  */
 import java.awt.Color;
+import javax.swing.JPanel;
+import java.awt.Graphics;
 
-
-public abstract class BlockSets {
+public abstract class BlockSets extends JPanel {
     protected Color color;
+    protected final int blockSize = 10;
+    protected int x,y;
+    
     
     public abstract void moveDown();
     public abstract void moveLeft();
